@@ -12,7 +12,7 @@ def decimal_para_hexadecimal():
 
 def decimal_para_octal():
     decimal = int(input("Digite o número decimal: "))
-    return oct(decimal)
+    return oct(decimal) [2:]
 
 def binario_para_decimal():
     binario = input("Digite o número binário: ")
@@ -20,11 +20,11 @@ def binario_para_decimal():
 
 def hexadecimal_para_decimal():
     hexadecimal = input("Digite o número hexadecimal: ")
-    return int(hexadecimal, 16)[2:]  # Remove os dois primeiros caracteres
+    return int(hexadecimal, 16)
 
 def octal_para_decimal():
     octal = input("Digite o número octal: ")
-    return int(octal, 8)[2:]  # Remove os dois primeiros caracteres
+    return int(octal, 8)
 
 
 

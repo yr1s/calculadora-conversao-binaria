@@ -56,19 +56,18 @@ while True:
         print("\na conversão de binario para decimal é : ", decimal)
 
     elif opcao == "5" :
-        #hexadecimal para decimal 
-         hexadecimal = input("Digite um numero hexadecimal : ")
-         decimal = 0
-         potencia = len(hexadecimal) - 1
-         for digito in hexadecimal:
-             if digito.isdigit():
-                decimal += int(digito) * (16 ** potencia)
-             else:
-                decimal += (ord(digito) - 55) * (16 ** potencia)
-                potencia -= 1
-         print("\na conversão de hexadecimal para decimal é: ", decimal)
+       #hexadecimal para decimal
+        hexadecimal = input("Digite um numero hexadecimal(caso possua letras, digite em maiusculo) : ")
+        decimal = 0
+        potencia = len(hexadecimal) - 1
+        for digito in hexadecimal:
+            if digito.isdigit():
+               decimal += int(digito) * (16 ** potencia)
+            else:
+               decimal += (ord(digito) - 55) * (16 ** potencia)
+            potencia -= 1
+        print("\na conversão de hexadecimal para decimal é: ", decimal)
 
-    
     elif opcao == "6" :
          #octal para decimal 
          octal = input("Digite um numero octal : ")

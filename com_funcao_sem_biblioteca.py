@@ -28,7 +28,7 @@ def decimal_hexadecimal() :
 
 def decimal_octal() :
     #decimal para octal
-    decimal = int(input("Digite um numero octal : "))
+    decimal = int(input("Digite um numero decimal : "))
     octal = ""
     while decimal > 0:
          resto = decimal % 8
@@ -50,7 +50,7 @@ def binario_decimal() :
 
 def hexadecimal_decimal() :
     #hexadecimal para decimal
-  hexadecimal = input("Digite um numero hexadecimal : ")
+  hexadecimal = input("Digite um numero hexadecimal(caso possua letras, digite em maiusculo) : ")
   decimal = 0
   potencia = len(hexadecimal) - 1
   for digito in hexadecimal:
